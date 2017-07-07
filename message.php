@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,6 +9,6 @@
 
 <?php
   include_once('database.php');
-
+?>
   </body>
 </html>
