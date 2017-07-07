@@ -9,7 +9,7 @@
 <?php
   include_once('database.php');
 
-  $result = $db->query("select uid, body from messages");
+  $result = $db->query("select uid, body,timestamp from messages");
   while ( $mes = $result->fetch_assoc()) {
     print( $mes['uid'] . " : " . $mes['body'] . "<br />");
   }

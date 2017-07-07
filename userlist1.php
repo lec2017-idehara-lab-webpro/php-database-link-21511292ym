@@ -12,6 +12,7 @@
   $result = $db->query("select * from users");
   while ( $user = $result->fetch_assoc()) {
     var_dump($user);
+      print("<hr />");
   }
   $result->close();
  ?>
